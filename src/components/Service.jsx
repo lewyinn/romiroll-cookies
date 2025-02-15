@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 import React from 'react'
+import { BiData } from 'react-icons/bi';
+import { BsHeartFill } from 'react-icons/bs';
+import { FaStar } from 'react-icons/fa';
 import { GiWrappedSweet } from 'react-icons/gi';
+import { TbNumber100Small} from 'react-icons/tb';
 
 const iconVariants = (duration) => ({
     initial: { y: -10 },
@@ -23,7 +27,7 @@ const Service = () => {
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 1.5 }}
                 className='my-20 text-center text-4xl font-bold text-[#A096CF]'>
-                Our Services
+                Kenapa Harus Romiroll?
             </motion.h2>
             <motion.div 
                 whileInView={{ opacity: 1, x: 0 }}
@@ -35,32 +39,32 @@ const Service = () => {
                     animate="animate"
                     variants={iconVariants(1.5)}
                     className='flex justify-center items-center gap-2'>   
-                    <GiWrappedSweet className='text-5xl text-[#A096CF]'/>
-                    <span className='text-3xl font-bold text-black'>Sweet Tasty</span>
+                    <FaStar className='text-5xl text-[#A096CF]'/>
+                    <span className='text-3xl font-bold text-black'>Bahan Premium</span>
                 </motion.div>
                 <motion.div 
                     initial="initial"
                     animate="animate"
                     variants={iconVariants(2)}
                     className='flex justify-center items-center gap-2'>   
-                    <GiWrappedSweet className='text-5xl text-[#A096CF]'/>
-                    <span className='text-3xl font-bold text-black'>Sweet Tasty</span>
+                    <TbNumber100Small className='text-5xl text-[#A096CF]'/>
+                    <span className='text-3xl font-bold text-black'>Tekstur Sempurna</span>
                 </motion.div>
                 <motion.div 
                     initial="initial"
                     animate="animate"
                     variants={iconVariants(2.5)}
                     className='flex justify-center items-center gap-2'>   
-                    <GiWrappedSweet className='text-5xl text-[#A096CF]'/>
-                    <span className='text-3xl font-bold text-black'>Sweet Tasty</span>
+                    <BiData className='text-5xl text-[#A096CF]'/>
+                    <span className='text-3xl font-bold text-black'>Varian Rasa Unik</span>
                 </motion.div>
                 <motion.div 
                     initial="initial"
                     animate="animate"
                     variants={iconVariants(3)}
                     className='flex justify-center items-center gap-2'>   
-                    <GiWrappedSweet className='text-5xl text-[#A096CF]'/>
-                    <span className='text-3xl font-bold text-black'>Sweet Tasty</span>
+                    <BsHeartFill className='text-5xl text-[#A096CF]'/>
+                    <span className='text-3xl font-bold text-black'>Dibuat dengan Cinta</span>
                 </motion.div>
             </motion.div>
         </div>

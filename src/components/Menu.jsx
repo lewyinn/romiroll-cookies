@@ -18,27 +18,27 @@ const iconVariants = (duration) => ({
 const Menu = () => {
     return (
         <div className='py-10' id='menu'>
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center gap-4'>
                 <motion.div whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -100 }}
                     transition={{ duration: 0.8 }} 
                     className='flex flex-col justify-center items-center text-center gap-3'>
                     <h1 className='text-5xl font-bold text-[#A096CF]'>
-                        Top List
+                        Pilihan Cookies Lezat Kami
                     </h1>
                     <p className='text-xl font-medium text-gray-800'>
-                        Our Mainstay menu
+                        Temukan cookies yang dibuat dengan resep spesial. Dibuat dengan cinta dan bahan terbaik!
                     </p>
                 </motion.div>
                 <motion.div whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 100 }}
                     transition={{ duration: 1 }} 
                     className='grid grid-cols-1 text-center'>
-                    <div className="relative w-96 text-center overflow-hidden">
+                    <div className="relative w-auto md:w-96 text-center overflow-hidden">
                         <motion.img
                             src={image}
                             alt='Cookies'
-                            className="w-72 h-auto absolute top-6 left-1/2 transform -translate-x-1/2 rounded-full object-cover z-20"
+                            className="w-64 lg:w-72 h-auto absolute top-14 lg:top-6 left-1/2 transform -translate-x-1/2 rounded-full object-cover z-20"
                             initial="initial"
                             animate="animate"
                             variants={iconVariants(1.5)}

@@ -45,23 +45,25 @@ const Hero = () => {
                         className='flex flex-col justify-center items-start gap-8 w-auto lg:w-2xl'>
                         <motion.h1 variants={childVariants}
                             className='text-4xl lg:text-[84px] font-semibold text-[#A096CF]'>
-                            Delicious Food is Waiting For you
+                            Nikmati Kelezatan Romiroll Cookies!
                         </motion.h1>
                         <motion.p initial="hidden"
                             animate="visible"
                             transition={{ delay: 0.3 }} 
                             variants={childVariants} 
                             className='text-xl font-normal text-gray-900'>
-                            Our teams of registered nurses and skilled
-                            healthcare professionals provide in-home nursing
+                            Kami menghadirkan cookies premium dengan bahan berkualitas dan rasa yang menggoda. 
+                            Setiap gigitan memberikan pengalaman manis yang tak terlupakan!
                         </motion.p>
                         <motion.div 
                             variants={childVariants}
                             className='flex justify-center items-center gap-3 lg:gap-6'>
-                            <Link className='cursor-pointer text-base lg:text-xl font-semibold text-white bg-[#A096CF] hover:bg-[#968acc] px-6 py-3 rounded-2xl'>
+                            <Link to='menu' spy={true} smooth={true} offset={-200} 
+                                className='cursor-pointer text-base lg:text-xl font-semibold text-white bg-[#A096CF] hover:bg-[#968acc] px-6 py-3 rounded-2xl'>
                                 Food Menu
                             </Link>
-                            <Link className='cursor-pointer text-base lg:text-xl font-semibold text-[#A096CF] bg-white hover:text-white hover:bg-[#A096CF] border-2 border-[#A096CF] px-6 py-3 rounded-2xl'>
+                            <Link to='about' spy={true} smooth={true} offset={-200} 
+                                className='cursor-pointer text-base lg:text-xl font-semibold text-[#A096CF] bg-white hover:text-white hover:bg-[#A096CF] border-2 border-[#A096CF] px-6 py-3 rounded-2xl'>
                                 See More
                             </Link>
                         </motion.div>

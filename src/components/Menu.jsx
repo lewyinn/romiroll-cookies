@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import image from '../assets/cookiesMenu.jpg'
+import imageBites from '../assets/cookiesMenu1.jpeg'
+import imageWise from '../assets/cookiesMenu2.jpeg'
 
 const iconVariants = (duration) => ({
     initial: { y: -8 },
@@ -33,7 +35,7 @@ const Menu = () => {
                 <motion.div whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 100 }}
                     transition={{ duration: 1 }} 
-                    className='grid grid-cols-1 text-center'>
+                    className='grid grid-cols-1 md:grid-cols-3 text-center gap-6'>
                     <div className="relative w-auto md:w-96 text-center overflow-hidden">
                         <motion.img
                             src={image}
@@ -45,9 +47,41 @@ const Menu = () => {
                         />
                         <div className="mt-48 bg-[#A096CF] shadow-xl px-6 pb-6 pt-36 rounded-2xl z-0">
                             <span className="text-yellow-500 font-bold text-lg">⭐⭐⭐⭐⭐</span>
-                            <h2 className="font-bold text-4xl text-white">Cookies</h2>
-                            <p className="text-gray-200 text-xl mt-2">Spicy boil with seafood and pork in hot pot</p>
-                            <p className="text-2xl font-bold mt-2 text-gray-100">Rp. 5.000</p>
+                            <h2 className="font-bold text-4xl text-white">Choco Brownies</h2>
+                            <p className="text-gray-200 text-xl mt-2">Brownies Rasa coklat nikmat</p>
+                            <p className="text-2xl font-bold mt-2 text-gray-100">Rp. 3.000</p>
+                        </div>
+                    </div>
+                    <div className="relative w-auto md:w-96 text-center overflow-hidden">
+                        <motion.img
+                            src={imageBites}
+                            alt='Cookies'
+                            className="w-64 lg:w-72 h-auto absolute top-14 lg:top-6 left-1/2 transform -translate-x-1/2 rounded-full object-cover z-20"
+                            initial="initial"
+                            animate="animate"
+                            variants={iconVariants(1.5)}
+                        />
+                        <div className="mt-48 bg-[#A096CF] shadow-xl px-6 pb-6 pt-36 rounded-2xl z-0">
+                            <span className="text-yellow-500 font-bold text-lg">⭐⭐⭐⭐⭐</span>
+                            <h2 className="font-bold text-4xl text-white">Brownies Bites</h2>
+                            <p className="text-gray-200 text-xl mt-2">Brownies Bites yang melezatkan </p>
+                            <p className="text-2xl font-bold mt-2 text-gray-100">Rp. 3.000</p>
+                        </div>
+                    </div>
+                    <div className="relative w-auto md:w-96 text-center overflow-hidden">
+                        <motion.img
+                            src={imageWise}
+                            alt='Cookies'
+                            className="w-64 lg:w-72 h-auto absolute top-14 lg:top-6 left-1/2 transform -translate-x-1/2 rounded-full object-cover z-20"
+                            initial="initial"
+                            animate="animate"
+                            variants={iconVariants(1.5)}
+                        />
+                        <div className="mt-48 bg-[#A096CF] shadow-xl px-6 pb-6 pt-36 rounded-2xl z-0">
+                            <span className="text-yellow-500 font-bold text-lg">⭐⭐⭐⭐⭐</span>
+                            <h2 className="font-bold text-4xl text-white">Hard Cookies</h2>
+                            <p className="text-gray-200 text-xl mt-2">-</p>
+                            <p className="text-2xl font-bold mt-2 text-gray-100">Rp. 3.000</p>
                         </div>
                     </div>
                 </motion.div>
